@@ -1,0 +1,102 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+<body>
+<div class="slider">
+    <div class="navigate_x" id="prev">
+        <
+    </div>
+    <div id="images_slide">
+        <div class="content">
+            <img src="C:/xampp/htdocs/site_vitrine/templates/fonts/bg (1).jpg" alt="academie_summer" class="slide">
+            <img src="C:/xampp/htdocs/site_vitrine/templates/fonts/bg (2).jpg" alt="academie_summer" class="slide">
+            <img src="C:/xampp/htdocs/site_vitrine/templates/fonts/bg (3).jpg" alt="academie_summer" class="slide">
+            <img src="C:/xampp/htdocs/site_vitrine/templates/fonts/bg (7).jpg" alt="academie_summer" class="slide">
+            <img src="C:/xampp/htdocs/site_vitrine/templates/fonts/bg (1).jpeg" alt="academie_summer" class="slide">
+            <img src="C:/xampp/htdocs/site_vitrine/templates/fonts/bg (9).jpg" alt="academie_summer" class="slide">
+        </div>
+    </div>
+    <div class="navigate_x" id="next">
+        >
+    </div>
+</div>
+</body>
+<style>
+    *{
+        margin:0;
+        
+    }
+    .slider,.navigate_x{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-weight:bold;
+        color:aqua;
+        font-size: 120%;
+
+    }
+    .slider{
+        color:red;
+        background:orange;
+        height:300px;
+        border: 1px solid #cca;
+        width:50%;
+        margin:25svh 0 0 25%;
+        border-radius:15px
+
+    }
+    .content{
+        width:calc(640px*5);
+        background:brown;
+        height:100%;
+        animation: 15s infinite slideuse alternate;
+    }
+    @keyframes slideuse{
+        0%{
+            transform:translateX(-0px)
+        }
+        19%{
+            transform:translateX(-640px)
+        }
+        39%{
+            transform:translateX(-1280p)
+        }
+        59%{
+            transform:translateX(-1920px)
+        }
+        79%{
+            transform:translateX(-2560px)
+        }
+        99%{
+            transform:translateX(0)
+        }
+    }
+    #images{
+        width: 80% ;
+        float:center;
+        background: rgba(0,0,0,0.31);
+        height:100%;
+        overflow:hidden;
+        width:calc(100%*1)
+
+    }
+    .slide{
+        width:640px;
+        height:100%;
+        float:left
+    }
+    #prevent{
+    }
+    #next{
+    }
+    .navigate_x{
+        text-align:center;
+        height:100%;
+        width:10%;
+    }
+    @media screen and  (max-width:600px){
+        
+    .slider{
+        height:180px;
+
+    }
+    }
+</style>
